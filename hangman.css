@@ -1,0 +1,265 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #d3d3d3;
+}
+
+header, footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-container {
+    background-color: #d3d3d3;
+    padding: 10px;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+     
+}
+
+.container {
+    text-align: center;
+}
+
+.game-stat {
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categories button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: lightgreen;
+    border-radius: 10px;
+    border-color: darkred;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hangman-draw {
+    margin-right: 20px;
+}
+
+.draw {
+    position: relative;
+}
+
+.guesses {
+    margin: 20px 0;
+}
+
+.guesses h2 {
+    margin: 0 0 10px 0;
+}
+
+#guessed-letters-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    letter-spacing: 5px;
+}
+
+#word-display{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 36px;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.keyboard button {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.play-again {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.play-again button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #FF7F7F;
+    border-radius: 10px;
+    
+}
+
+.message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff0000;
+}
+
+/* Tablets and larger smartphones (landscape) */
+@media (max-width: 1024px) {
+    .categories button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .hangman-draw {
+        margin-right: 10px;
+    }
+
+    .keyboard button {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
+/* Smartphones (portrait) */
+@media (max-width: 768px) {
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .categories button {
+        width: 45%;
+        margin: 5px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .hangman-draw {
+        margin-right: 0;
+    }
+
+    .keyboard button {
+        width: 28%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .play-again button {
+        font-size: 14px;
+    }
+}
+
+/* Smaller smartphones */
+@media (max-width: 480px) {
+    .categories button {
+        width: 100%;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .keyboard button {
+        width: calc(100% / 7 - 10px);
+        padding: 6px 8px;
+        font-size: 12px;
+        margin: 2px;
+    }
+
+    .play-again button {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .image-container {
+        padding: 5px;
+    }
+
+    .image-container img {
+        max-width: 80%;
+    }
+
+    .guesses h2 {
+        font-size: 16px;
+    }
+
+    .guessed-letters {
+        margin-top: 10px;
+    }
+}
+
+/* Very small smartphones */
+@media (max-width: 320px) {
+    .categories button {
+        width: 100%;
+        padding: 5px 7px;
+        font-size: 11px;
+    }
+
+    .keyboard button {
+        width: calc(100% / 7 - 10px);
+        padding: 5px 7px;
+        font-size: 11px;
+        margin: 2px;
+    }
+
+    .play-again button {
+        font-size: 11px;
+        padding: 5px 7px;
+    }
+
+    .image-container {
+        padding: 5px;
+    }
+
+    .image-container img {
+        max-width: 80%;
+    }
+
+    .guesses h2 {
+        font-size: 14px;
+    }
+
+    .guessed-letters {
+        margin-top: 10px;
+    }
+}

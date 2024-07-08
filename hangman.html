@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hangman.css">
+    <script src="hangman.js" defer></script>
+    <title>Hangman Game</title>
+</head>
+<body>
+    <header>
+        <img src="images/image.png" class="logo">
+        <h1>Hangman</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="game-stat">
+                <div class="categories">
+                    <button onclick="startGame('animals')">Animals</button>
+                    <button onclick="startGame('countries')">Countries</button>
+                    <button onclick="startGame('fruits')">Fruits</button>
+                    <button onclick="startGame('vegetables')">Vegetables</button>
+                    <button onclick="startGame('clothes')">Clothes</button>
+                    <button onclick="startGame('sports')">Sports</button>
+                </div>
+            </div>
+            <div class="line">
+                <div class="hangman-draw">
+                    <div class="draw">
+                        <div class="image-container">
+                            <img src="https://i.ibb.co/7r7Fn0W/hangg-png.png" alt="Hangman Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="letters" id="word-display"></div>
+            </div>
+            <div class="guesses">
+                <h2>Guessed Letters:</h2>
+                <div id="guessed-letters-container"></div>
+            </div>
+            <div class="keyboard">
+                <!-- Buttons will be added dynamically here -->
+            </div>
+            <div class="play-again">
+                <button onclick="resetGame()">Play Again</button>
+            </div>
+            <div id="message" class="message"></div>
+        </div>
+    </main>
+    <footer>Hangman game 2024 ©</footer>
+</body>
+</html>
