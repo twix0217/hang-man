@@ -9,44 +9,38 @@
 </head>
 <body>
     <header>
-        <img src="images/image.png" class="logo">
         <h1>Hangman</h1>
     </header>
     <main>
+        <div class="card">
         <div class="container">
-            <div class="game-stat">
-                <div class="categories">
-                    <button onclick="startGame('animals')">Animals</button>
-                    <button onclick="startGame('countries')">Countries</button>
-                    <button onclick="startGame('fruits')">Fruits</button>
-                    <button onclick="startGame('vegetables')">Vegetables</button>
-                    <button onclick="startGame('clothes')">Clothes</button>
-                    <button onclick="startGame('sports')">Sports</button>
-                </div>
+            <div class="categories">
+                <button>Animals</button>
+                <button>Countries</button>
+                <button>Fruits</button>
+                <button>Vegetables</button>
+                <button>Clothes</button>
+                <button>Sports</button>
             </div>
-            <div class="line">
-                <div class="hangman-draw">
-                    <div class="draw">
-                        <div class="image-container">
-                            <img src="https://i.ibb.co/7r7Fn0W/hangg-png.png" alt="Hangman Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="letters" id="word-display"></div>
+            <div class="hangman-draw">
+                <div id="head" class="hangman-part"></div>
+                <div id="body" class="hangman-part"></div>
+                <div id="abdomen" class="hangman-part"></div>
+                <div id="left-arm" class="hangman-part"></div>
+                <div id="right-arm" class="hangman-part"></div>
+                <div id="left-leg" class="hangman-part"></div>
+                <div id="right-leg" class="hangman-part"></div>
             </div>
-            <div class="guesses">
-                <h2>Guessed Letters:</h2>
-                <div id="guessed-letters-container"></div>
-            </div>
-            <div class="keyboard">
-                <!-- Buttons will be added dynamically here -->
-            </div>
+            <div id="word-display"></div>
+            <div id="guessed-letters-container"></div>
+            <div id="message"></div>
+            <div class="keyboard"></div>
             <div class="play-again">
-                <button onclick="resetGame()">Play Again</button>
+                <button>Play Again</button>
             </div>
-            <div id="message" class="message"></div>
         </div>
+    </div>
     </main>
-    <footer>Hangman game 2024 ©</footer>
+    <footer>©Hangman game 2024 </footer>
 </body>
 </html>
