@@ -5,6 +5,8 @@
 
 Date: 10/7/2024
 
+[hangman](https://twix0217.github.io/hang-man/)
+
 ## **Description**
 **Hangman game is game which is developed using HTML, CSS, and JavaScript. It includes several elements such as categories buttons, keyboard buttons, hangman drawing, and the play again button. This hangman game project is implemented to enhance the skills of games development**
 
